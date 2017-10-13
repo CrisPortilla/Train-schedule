@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" text="text/css" href="assets/css/reset.css">
+  	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>	
+
+	<title>Train Schedule</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="jumbotron">
+			<h1>On the Go Trains</h1>
+			<h2>Usually 99% on time!</h2>
+	</div>
+
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3>Realtime Train Schedule</h3>
+				</div>
+				<div class="panel-body">
+					<table class="table table-hover" id='train-schedule'>
+						<thead>
+							<tr>
+								<th>Train Name</th>
+								<th>Destination</th>
+								<th>Frequency (minutes)</th>
+								<th>Next arrival</th>
+								<th>Minutes Away</th>
+							</tr>
+						</thead>
+						<tbody >
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Add Train</h3>
+				</div>
+
+				<div class="panel-body">
+
+					<form>
+						<div class="form-group">
+							<label for="train-name-input">Train Name</label>
+							<input type="text" class="form-control" id="train-name-input">
+						</div>
+						<div class="form-group">
+							<label for="destination-input">Destination</label>
+							<input type="text" class="form-control" id="destination-input">
+						</div>
+						<div class="form-group">
+							<label for="frequency-input">Frequency (mintues)</label>
+							<input type="text" class="form-control" id="frequency-input">
+						</div>
+						<div class="form-group">
+							<label for="start-input">Start Time</label>
+							<input type="text" class="form-control" id="start-input">
+						</div>
+						
+						<button id="add-train" type="submit">Add Train</button>
+					</form>
+
+	<script src="assets/javascript/app.js"></script>				
+
+</body>
+</html>
