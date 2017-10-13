@@ -1,0 +1,17 @@
+body{
+    background-image: url('../images/train.jpg');
+}
+
+.jumbotron{
+    background-color: #074396;
+    color: #ffffff;
+}
+
+.panel-title{
+    font-size: 15;
+}
+
+h2, h1{
+    text-align: center;
+}
+
